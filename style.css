@@ -31,6 +31,13 @@ nav ul li{
     border-radius: 10px;
     
 }
+.listanav{
+    transition: all 0.5s;
+}
+.animationnav:hover .listanav{
+transform: translateY(5px);
+}
+
 .turnos{
     display: flex;
     flex-direction: column;
@@ -58,21 +65,22 @@ footer{
 
 .instagram{
     display: flex;
-    position: absolute;
+    position:relative;
+    width: 230px;
+    height: 50px;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     text-align: center;
     background-color:#fcfcda;
     color: #A96DA6;
     border-radius: 30px;
     font-family: 'Aboreto', cursive;
-    margin-top: 40px;
-    transition: all 2s;
- }
- .instagram:hover{
-    transform: scale(2);
- }
-
+    margin:auto;
+    transition: all 0.5s;
+}
+ .animationig:hover .instagram{
+    transform:scale(2);
+}
 
 footer ul{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,6 +91,7 @@ footer ul{
 }
 footer ul li{
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -132,7 +141,7 @@ footer ul li{
 
 footer iframe{
 height: 200px;
-width: 200px;
+width: 300px;
 }
  /*index*/
 .Destacados{
@@ -180,7 +189,7 @@ width: 200px;
     color: #fcfcda;
     background-color: #A96DA6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 180px;
+    margin: 100px;
    
 }
 
@@ -214,7 +223,6 @@ article{
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     align-items: stretch;
-    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fcfcda;
     padding: 10%;
@@ -222,35 +230,48 @@ article{
 
 .aparatologia{
     background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     grid-area: aparat1;
+    transition: all 2s;
 }
 .servicios{
     background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
     background-repeat: no-repeat;
-    grid-area: serv2 ;
+    grid-area: serv2;
+    transition: all 2s;
 }  
 .maquillaje{
     background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
     background-repeat: no-repeat;
     grid-area: maqui3;
+    transition: all 2s;
 }  
 .limpieza{
     background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
     background-repeat: no-repeat;
     grid-area: limp4;
+    transition: all 2s;
 }
 .masajes{
     background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
     background-repeat: no-repeat;
     grid-area: masa5;
+    transition: all 2s;
 }
 .manosypies{
     background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
     background-repeat: no-repeat;
     grid-area:myp6;
+    transition: all 2s;
 }
-
+.aparatologia:hover,
+.masajes:hover,
+.manosypies:hover,
+.servicios:hover,
+.maquillaje:hover,
+.limpieza:hover{
+    transform: translateX(10px);
+}
 /*contacto*/
 /*no es la imagen final*/
 .formulario{
