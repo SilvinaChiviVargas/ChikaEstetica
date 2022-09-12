@@ -3,7 +3,7 @@
     padding: 0;
 }*
 .parallax{
-    background-image:url(./img/background.jpg) ;
+    background-image:url(./img/backgroundpage.png) ;
     height: 600px;
     background-attachment: fixed;
     background-position: center;
@@ -11,13 +11,19 @@
     background-size: cover;
 }
 
+.logo{
+    width: 400px;
+}
 nav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    color: #364255;
+    text-decoration: none;
+    
 }
-nav ul li{
+.listanav{
     display: inline-block;
     list-style-type: none;
     padding: 0px 20px 0px 20px;
@@ -25,18 +31,25 @@ nav ul li{
     font-size: 20px;
     font-weight: bold;
     font-family: 'Aboreto', cursive;
-    color: #ffb6af;
-    background-color: #c7f6d4;
+    color: #364255;
     text-align: center;
-    border-radius: 10px;
+   
+    text-decoration: none;
     
 }
-.listanav{
-    transition: all 0.5s;
+.btn{
+    background-color: #EF7978;
+    border-radius: 10px;
+     
 }
-.animationnav:hover .listanav{
-transform: translateY(5px);
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+    background-color: #EF7978;
+    border-color: #EF7978;
 }
+.btn-primary{
+    border-color: #EF7978;
+}
+  
 
 .turnos{
     display: flex;
@@ -44,15 +57,14 @@ transform: translateY(5px);
     justify-content: center;
     list-style-type: none;
     padding: 20px;
-   margin: 10px;
+    margin: 10px;
     border: 10px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Aboreto', cursive;
     text-align: center;
     border-radius: 10px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edaef9+0,81b1fa+100 */
-     background: #edaef9; /* Old browsers */ background: -moz-linear-gradient(left, #edaef9 0%, #81b1fa 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, #edaef9 0%,#81b1fa 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, #edaef9 0%,#81b1fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edaef9', endColorstr='#81b1fa',GradientType=1 ); /* IE6-9 */
+    background-image: radial-gradient(#fad7d7, #BF5D65 );
     
 }
 
@@ -85,6 +97,7 @@ footer{
 footer ul{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #A96DA6;
+    background-color:#f6fcda ;
     text-decoration: solid;
     margin: 50px;
     
@@ -144,38 +157,6 @@ height: 200px;
 width: 300px;
 }
  /*index*/
-.Destacados{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "fotodestacado titulo"
-    "fotodestacado texto";
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
-    background-color: #fcfcda;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #A96DA6;
-    align-items: center;
-}
-
-.Destacados h2{
-    font-size: large;
-    text-align: center;
-    grid-area: titulo;
-    justify-self: start;
-}
-
-.Destacados img{
-    border-radius: 50% 20% / 10% 40%;
-    align-items: center;
-    grid-area:fotodestacado;
-    justify-self: center;
-}
-.Destacados p{
-    grid-area:texto ;
-}
-
 .SobreNosotros{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -186,8 +167,8 @@ width: 300px;
     align-items: stretch;
     grid-column-gap: 30px;
     padding: 30px;
-    color: #fcfcda;
-    background-color: #A96DA6;
+    color: #f9f8e7;
+    background-color: #EF7978;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 100px;
    
