@@ -18,81 +18,165 @@
 </head>
 <body class="parallax">
   <header>
-    <nav class="animationnav">
-      <img class="logo" src="./img/logoindex.png" alt="logo chika">
-     <ul class="listanav">
-       <li><a class="inicio" href="./index.html">Inicio</a></li>
-       <li><a class="tratamientos" href="./tratamientos.html">Tratamientos</a> </li>
-       <li><a class="contacto" href="./contacto.html"> Contacto </a></li>
-       <li>Buscar</li>
-     </ul>
-     <aside class="turnos animate__animated animate__pulse animate__repeat-3" ><a href="https://widget.koibox.cloud/#/centro/chloe-382?ref=instagram"target="_blank">Pedir turno</a></aside>
-    </nav>
+    <nav>
+     <div class="container">
+       <div class="row d-flex align-items-center flex-wrap">
+         <div class="col-4"><img class="logo" src="./img/logoindex.png" alt="logo chika"></div>
+         <div class="col-3"></div>
+         <div class="col-5">
+           <div class="btn-group listanav">
+             <a href="./index.html" class="btn btn-primary active inicio" aria-current="page">Inicio</a>
+             <a href="./tratamientos.html" class="btn btn-primary tratamientos">Tratamientos</a>
+             <a href="./contacto.html" class="btn btn-primary contacto">Contacto</a>
+             <div>
+               <button class="btn btn-primary" type="button">
+                 <a class="turnos" href="https://widget.koibox.cloud/#/centro/chloe-382?ref=instagram"target="_blank">Reservar turno online
+                 </a></button>
+           </div>
+           </div>
+     </div>
+    </div>
+   </div>
+   </nav>
    </header>
- <article>
-    <div class="aparatologia">
-    <h2>Aparatología</h2>
-    <ul>
-      <li>Himfu</li>
-      <li>Body Up</li>
-      <li>Depilación Definitiva</li>
-      <li>Crioradiofrecuencia</li>
-    </ul>
-  </div>
-    <div class="servicios">
-          <h2>Servicios</h2>
-    <ul>
-      <li>Perfilado de Cejas</li>
-      <li>Tintura con Henna</li>
-      <li>Laminado de Cejas</li>
-      <li>Lifting de pestañas</li>
-      <li>Botox para Cejas y Pestañas</li>
-      <li>Permanente y Tintura de Pestañas</li>
-      <li>Extensión de Pestañas Pelo por Pelo</li>
-    </ul>
-  </div>
-    <div class="maquillaje">
-          <h2>Maquillaje</h2>
-    <ul>
-      <li>Make Up Social</li>
-      <li>Make Up Artístico</li>
-      <li>Clases de Automaquillaje</li>
-          </ul>
+
+   <div class="container allcards">
+    <div class="row d-flex flex-wrap">
+      <div class="card mb-3 box-1" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/aparatologia.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 aparatologia">
+            <div class="card-body">
+              <h5 class="card-title titulo1">APARATOLOGIA</h5>
+              <p class="card-text"><ul>
+                <li>Himfu</li>
+                <li>Body Up</li>
+                <li>Depilación Definitiva</li>
+                <li>Crioradiofrecuencia</li>
+              </ul></p>
+              <p class="card-text"><small class="text-muted">Consultá por más tratamientos</small></p>
+            </div>
+          </div>
         </div>
-        <div class="limpieza">
-        <h2>Limpieza</h2>
-    <ul>
-      <li>Limpieza de Cutis Completa</li>
-      <li>Limpieza de Cutis Completa con Dermaplaning</li>
-      <li>Limpieza Profunda de Espalda</li>
-          </ul>
+      </div>
+      <div class="card mb-3 box-2" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/servicios.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 servicios">
+            <div class="card-body">
+              <h5 class="card-title titulo2">SERVICIOS</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Perfilado de Cejas</li>
+                  <li>Tintura con Henna</li>
+                  <li>Laminado de Cejas</li>
+                  <li>Lifting de pestañas</li>
+                  <li>Botox para Cejas y Pestañas</li>
+                  <li>Permanente y Tintura de Pestañas</li>
+                  <li>Extensión de Pestañas Pelo por Pelo</li>
+                </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">Consultá por más tratamientos</small></p>
+            </div>
+          </div>
         </div>
-        <div class="masajes">
-        <h2>Masajes</h2>
-    <ul>
-      <li>Reductores</li>
-      <li>Faciales</li>
-      <li>Drenajes Linfáticos en Rostro</li>
-      <li>Drenajes Linfáticos en Piernas</li>
-      <li>Drenajes Linfáticos en Cuerpo Entero</li>
-      <li>Drescontacturante Medio Cuerpo</li>
-      <li>Drescontacturante Cuerpo Entero</li>
-          </ul>
+      </div>
+      <div class="card mb-3 box-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/maquillaje.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 maquillaje">
+            <div class="card-body">
+              <h5 class="card-title titulo3">MAQUILLAJE</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Make Up Social</li>
+                  <li>Make Up Artístico</li>
+                  <li>Clases de Automaquillaje</li>
+                      </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">Consultá por más tratamientos</small></p>
+            </div>
+          </div>
         </div>
-        <div class="manosypies">
-        <h2>Manos y Pies</h2>
-    <ul>
-      <li>Spa de Manos y Pies con Esmaltado</li>
-      <li>Spa de Manos sin Esmaltado</li>
-      <li>Kapping gel con Esmaltado</li>
-      <li>Kapping gel con Esmaltado Semi</li>
-      <li>Manos Esculpidas con Esmaltado Semi</li>
-      <li>Spa de Pies con Esmalte Común </li>
-      <li>Spa de Pies Completo</li>
-          </ul>
+      </div>
+      <div class="card mb-3 box-4" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/limpieza.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 limpieza">
+            <div class="card-body">
+              <h5 class="card-title titulo4">LIMPIEZA</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Limpieza de Cutis Completa</li>
+                  <li>Limpieza de Cutis Completa con Dermaplaning</li>
+                  <li>Limpieza Profunda de Espalda</li>
+                      </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">Consultá por más tratamientos</small></p>
+            </div>
+          </div>
         </div>
- </article>
- <footer>
+      </div>
+      <div class="card mb-3 box-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/masajes.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 masajes">
+            <div class="card-body">
+              <h5 class="card-title titulo5">MASAJES</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Reductores</li>
+                  <li>Faciales</li>
+                  <li>Drenajes Linfáticos en Rostro</li>
+                  <li>Drenajes Linfáticos en Piernas</li>
+                  <li>Drenajes Linfáticos en Cuerpo Entero</li>
+                  <li>Drescontacturante Medio Cuerpo</li>
+                  <li>Drescontacturante Cuerpo Entero</li>
+                      </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">Consultá por más tratamientos</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 box-6" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/spapies.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 manosypies">
+            <div class="card-body">
+              <h5 class="card-title titulo6">MANOS Y PIES </h5>
+              <p class="card-text">
+                <ul>
+                  <li>Spa de Manos y Pies con Esmaltado</li>
+                  <li>Spa de Manos sin Esmaltado</li>
+                  <li>Kapping gel con Esmaltado</li>
+                  <li>Kapping gel con Esmaltado Semi</li>
+                  <li>Manos Esculpidas con Esmaltado Semi</li>
+                  <li>Spa de Pies con Esmalte Común </li>
+                  <li>Spa de Pies Completo</li>
+                      </ul>
+              </p>
+              <p class="card-text"><small class="text-muted">Consultá por más tratamientos</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   
+  <footer>
   <div class="animationig" >
   <a class="instagram" href="https://www.instagram.com/chika.estetica/?hl=es">SEGUINOS EN INSTAGRAM</a> 
 </div>

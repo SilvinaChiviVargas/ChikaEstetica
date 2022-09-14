@@ -14,32 +14,25 @@
 .logo{
     width: 400px;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: #364255;
-    text-decoration: none;
-    
-}
+
 .listanav{
     display: inline-block;
     list-style-type: none;
-    padding: 0px 20px 0px 20px;
     border: 10px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Aboreto', cursive;
-    color: #364255;
+    color: #fcfcda;
     text-align: center;
-   
     text-decoration: none;
     
 }
 .btn{
     background-color: #EF7978;
     border-radius: 10px;
+    display: initial;
+    margin-top: 20px;
+    font-weight: 600;
      
 }
 .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
@@ -49,25 +42,39 @@ nav{
 .btn-primary{
     border-color: #EF7978;
 }
-  
-
-.turnos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style-type: none;
-    padding: 20px;
-    margin: 10px;
-    border: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Aboreto', cursive;
-    text-align: center;
-    border-radius: 10px;
-    background-image: radial-gradient(#fad7d7, #BF5D65 );
-    
+.btn-primary:hover{
+    background-color: #364255;
+    border-color: #fcfcda;
+    color:#EF7978 !important;
 }
-
+  
+.inicio, .tratamientos, .contacto{
+    font-family:'Aboreto', cursive;
+    background-image: #BF5D65;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+    transition: background-color .5s;
+}
+.listanav:hover .inicio,
+.listanav:hover .tratamientos,
+.listanav:hover .contacto{
+    color: #364255;
+    background-color: #fcfcda;
+}
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 10px;
+}
+.turnos{
+    color: #364255;
+    text-decoration: none;
+}
+.turnos:hover{
+    color: #EF7978;
+}
+.col-5{
+    width: auto;
+}
 /*footer*/
 
 footer{
@@ -76,6 +83,9 @@ footer{
 }
 
 .instagram{
+    color: #fcfcda ;
+}
+.animationig{
     display: flex;
     position:relative;
     width: 230px;
@@ -83,15 +93,18 @@ footer{
     align-items: center;
     padding: 20px;
     text-align: center;
-    background-color:#fcfcda;
-    color: #A96DA6;
+    background-image: url(./img/igbackground.png);
+    color: #fcfcda;
     border-radius: 30px;
     font-family: 'Aboreto', cursive;
-    margin:auto;
+    margin-top: 80px;
     transition: all 0.5s;
+    
+    
 }
  .animationig:hover .instagram{
-    transform:scale(2);
+    transform:scale(1);
+    color: #d8ccd8 ;
 }
 
 footer ul{
@@ -157,6 +170,12 @@ height: 200px;
 width: 300px;
 }
  /*index*/
+
+ .carousel-caption{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #f9f8e7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
 .SobreNosotros{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,65 +211,65 @@ width: 300px;
 }
 
 /*tratamientos*/
-/*no es el fondo final*/ 
-article{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas:
-    "aparat1 serv2"
-    "maqui3 limp4"
-    "masa5 myp6"; 
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    align-items: stretch;
+.allcards{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fcfcda;
-    padding: 10%;
+    color: #ec7c7c;
+    font-weight: 600;
+    text-shadow: #364255;
+}
+.titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6{
+    color: #BF5D65;
+    font-size: larger;
+    font-weight: 800;
+    border: black;
+    text-align: center;
+    font-family: 'Aboreto';
+}
+.mb-3{
+    margin-left: 20px;
 }
 
 .aparatologia{
-    background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-    background-repeat: no-repeat;
-    grid-area: aparat1;
-    transition: all 2s;
+    background-image: url(./img/backgroundtratamientos.png);
+    
 }
 .servicios{
-    background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-    background-repeat: no-repeat;
-    grid-area: serv2;
-    transition: all 2s;
+    background-image: url(./img/backgroundtratamientos.png);
+    
 }  
 .maquillaje{
-    background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-    background-repeat: no-repeat;
-    grid-area: maqui3;
-    transition: all 2s;
+    background-image: url(./img/backgroundtratamientos.png);
+    
 }  
 .limpieza{
-    background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-    background-repeat: no-repeat;
-    grid-area: limp4;
-    transition: all 2s;
-}
+    background-image: url(./img/backgroundtratamientos.png);
+    
+
+    }
 .masajes{
-    background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-    background-repeat: no-repeat;
-    grid-area: masa5;
-    transition: all 2s;
+    background-image: url(./img/backgroundtratamientos.png);
+    
 }
 .manosypies{
-    background-image: url(https://place-puppy.com/public-images/index-page/image4/410x280-lg.jpg);
-    background-repeat: no-repeat;
-    grid-area:myp6;
-    transition: all 2s;
+    background-image: url(./img/backgroundtratamientos.png);
+    
 }
-.aparatologia:hover,
-.masajes:hover,
-.manosypies:hover,
-.servicios:hover,
-.maquillaje:hover,
-.limpieza:hover{
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6{
+    transition: all 2s;
+    border: #7b94a0 10px;
+    
+}
+.card{
+    background-color: transparent;
+    background-clip: unset;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover,
+.box-4:hover,
+.box-5:hover,
+.box-6:hover{
     transform: translateX(10px);
 }
 /*contacto*/
