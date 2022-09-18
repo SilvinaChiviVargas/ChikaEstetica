@@ -16,16 +16,31 @@
 </head>
 <body class="parallax">
   <header>
-    <nav class="animationnav">
-      <img class="logo" src="./img/logoindex.png" alt="logo chika">
-     <ul class="listanav">
-       <li><a class="inicio" href="./index.html">Inicio</a></li>
-       <li><a class="tratamientos" href="./tratamientos.html">Tratamientos</a> </li>
-       <li><a class="contacto" href="./contacto.html"> Contacto </a></li>
-       <li>Buscar</li>
-     </ul>
-     <aside class="turnos animate__animated animate__pulse animate__repeat-3" ><a href="https://widget.koibox.cloud/#/centro/chloe-382?ref=instagram"target="_blank">Pedir turno</a></aside>
-    </nav>
+    <nav class="navbar navbar-light navchika">
+      <div class="logonav">
+          <a class="navbar-brand" href=""><img class="logo" src="./img/logoindex.png" alt="logo chika">
+          </a>
+        </div>
+        <ul class="nav justify-content-center listanav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tratamientos.html">Tratamientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+          <div class="d-grid d-md-flex mx-auto botonturnos">
+            <button class="btn btn-primary turnosanimacion" type="button">
+              <a class="turnos" href="https://widget.koibox.cloud/#/centro/chloe-382?ref=instagram"target="_blank">Reservar turno online
+              </a></button>
+          </div>
+         </div>
+       </div>
+      </div>
+     </nav>
    </header>
 <section class="formulario">
     <p>Dejanos tus comentarios y te contactaremos para contarte más sobre los tratamientos</p>
@@ -34,19 +49,31 @@
         </article>
 </section>
 <footer>
-  <div class="animationig" >
-  <a class="instagram" href="https://www.instagram.com/chika.estetica/?hl=es">SEGUINOS EN INSTAGRAM</a> 
-</div>
-  <ul>
-    <li>
-      <link class="gg-phone" a href='https://css.gg/phone.css' rel='stylesheet'>+54221054353</a></li>
-    <li class="horario">
-      <link class="gg-time" a href='https://css.gg/time.css' rel='stylesheet'>Martes a sábados de 10 a 18hs</a></li>
-    <li class="direccion">
-      <link class="gg-home-alt" a href='https://css.gg/home-alt.css' rel='stylesheet'>Calle 22, 1628, La Plata</a></li>
-  </ul> 
-  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1562537593895!2d-57.95726828595893!3d-34.902528080383156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e64e658b658d%3A0x8672cedae1efd94f!2sCHO%2C%20C.%202%20387%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1660232729315!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</footer>
+  <div class="container">
+    <div class="row d-flex justify-content-center botonig">
+      <div class="col-md-3 animationig">
+        <link class="gg-instagram" a href="https://css.gg/instagram.css" rel='stylesheet'>
+        <a class="instagram chika" href="https://www.instagram.com/chika.estetica/?hl=es">
+          Seguinos en Instagram
+        </link>
+      </a>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <ul class="col-md-4">
+        <li>
+          <link class="gg-phone" a href='https://css.gg/phone.css' rel='stylesheet'>+54221054353</a></li>
+        <li class="horario">
+          <link class=" gg-time" a href='https://css.gg/time.css' rel='stylesheet'>Martes a sábados de 10 a 18hs</a></li>
+        <li class="direccion">
+          <link class=" gg-home-alt" a href='https://css.gg/home-alt.css' rel='stylesheet'>Calle 22, 1628, La Plata</a></li>
+      </ul> 
+      <div class="col-md-4">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1562537593895!2d-57.95726828595893!3d-34.902528080383156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e64e658b658d%3A0x8672cedae1efd94f!2sCHO%2C%20C.%202%20387%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1660232729315!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+   </div>
+ </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();

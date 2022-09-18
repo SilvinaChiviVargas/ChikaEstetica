@@ -15,8 +15,8 @@
     width: 400px;
 }
 
+
 .listanav{
-    display: inline-block;
     list-style-type: none;
     border: 10px;
     font-size: 20px;
@@ -25,35 +25,40 @@
     color: #fcfcda;
     text-align: center;
     text-decoration: none;
-    
-}
-.btn{
-    background-color: #EF7978;
     border-radius: 10px;
-    display: initial;
     margin-top: 20px;
     font-weight: 600;
-     
+    text-shadow: 1px 1px 2px #364255, 0 0 1em #fcfcda, 0 0 0.2em #fcfcda;
+    
+    
 }
-.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+.nav-link{
+   color: #EF7978;
+   text-decoration-color: #fcfcda;
+}
+.nav-link:hover{
+    background-color: #364255;
+    color:#fcfcda ;
+    border-radius: 10px;
+}
+   
+.turnosanimacion{
     background-color: #EF7978;
     border-color: #EF7978;
+    font-family: 'Aboreto', cursive;
 }
-.btn-primary{
-    border-color: #EF7978;
-}
-.btn-primary:hover{
+
+
+.turnosanimacion:hover{
     background-color: #364255;
     border-color: #fcfcda;
     color:#EF7978 !important;
 }
-  
+.botonturnos{
+    margin-top: 20px;
+}  
 .inicio, .tratamientos, .contacto{
-    font-family:'Aboreto', cursive;
-    background-image: #BF5D65;
-    text-decoration: none;
-    font-weight: bold;
-    margin-bottom: 50px;
+    text-shadow: 1px 1px 2px #364255, 0 0 1em #fcfcda, 0 0 0.2em #fcfcda;
     transition: background-color .5s;
 }
 .listanav:hover .inicio,
@@ -61,12 +66,14 @@
 .listanav:hover .contacto{
     color: #364255;
     background-color: #fcfcda;
+    
 }
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
     border-radius: 10px;
 }
 .turnos{
     color: #364255;
+    font-weight: bold;
     text-decoration: none;
 }
 .turnos:hover{
@@ -81,51 +88,71 @@ footer{
     display: flex;
     justify-content: center;
 }
+.botonig{
+    padding-bottom: 40px;
+}
+
 
 .instagram{
-    color: #fcfcda ;
+    color: #fcfcda;
+}
+
+.instagram:hover{
+    color: #fcfcda;
+    
+    
 }
 .animationig{
     display: flex;
     position:relative;
-    width: 230px;
-    height: 50px;
+    gap: 10px;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background-image: url(./img/igbackground.png);
     color: #fcfcda;
     border-radius: 30px;
-    font-family: 'Aboreto', cursive;
-    margin-top: 80px;
-    transition: all 0.5s;
+    font-family:'Aboreto', cursive;
+    
     
     
 }
- .animationig:hover .instagram{
-    transform:scale(1);
-    color: #d8ccd8 ;
+ .animationig:hover{
+    box-shadow: 1px 1px 20px 11px rgba(216, 204, 216, 1);
+  transition: all 0.2s ease;
+    
 }
 
 footer ul{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #A96DA6;
-    background-color:#f6fcda ;
-    text-decoration: solid;
-    margin: 50px;
+    margin: 10px;
+    
     
 }
 footer ul li{
     display: flex;
+    flex-direction: column;
+    text-decoration: overline;
+    background: rgba(71, 0, 0, 0.1);
     gap: 10px;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px;
 }
-.horario{
-    display: flex;
-    justify-content: space-around;
-    }
+
+
+@import url('https://css.gg/instagram.css');
+.gg-instagram {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        border: 2px solid transparent;
+        box-shadow: 0 0 0 2px;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px
+}
 
 @import url('https://css.gg/time.css');
 .gg-time::after {
@@ -167,14 +194,12 @@ footer ul li{
 
 footer iframe{
 height: 200px;
-width: 300px;
+width: 400px;
 }
  /*index*/
 
  .carousel-caption{
     text-shadow: black 0.1em 0.1em 0.2em;
-    color: #f9f8e7;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 .SobreNosotros{
     display: grid;
@@ -306,51 +331,28 @@ width: 300px;
 
 
 @media only screen and (max-width:480px){
-    /*header*/
-    header{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /*header @media*/
+header{
         text-align: center;
-        margin-bottom: 20px;
-               
-    }
-    nav img{
-        padding: 10px;
-    }
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-             
-    }
+}
 
-    nav ul li{
-        margin:5px;
-    }
+ .logonav{
+    margin-inline-start:auto;
+ }
  
-   /*footer*/ 
+   /*footer @media*/ 
 footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 footer div{
     justify-content: center;
 }
-.mapa{
-    width: 90vw;
-    padding: 20px;
-}
-   /*index*/
-   .Destacados{
-    align-items: center;
-    width: inherit;
-   }
-   .SobreNosotros{
+
+   /*index @media*/
+
+.SobreNosotros{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
@@ -362,21 +364,7 @@ footer div{
     padding: 60px;
     height: inherit;
     text-align: center;
-    align-items: center;
+    align-items: center
     }
-
-/*Tratamientos*/
-   
-   article{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-    "aparat1"
-    "serv2"
-    "maqui3"
-    "limp4"
-    "masa5"
-    "myp6";
-}
 
 }
