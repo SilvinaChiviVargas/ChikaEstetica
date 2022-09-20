@@ -1,0 +1,54 @@
+
+.logo{
+    width: 400px;
+}
+.listanav{
+    list-style-type: none;
+    border: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $tipografia-principal, cursive;
+    color: $color-claro;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px $color-oscuro, 0 0 1em $color-claro, 0 0 0.2em #fcfcda;
+    
+    
+}
+.nav-link{
+    color: $color-principal;
+    text-decoration-color: #fcfcda;
+&:hover{
+        background-color: $color-oscuro;
+        color: $color-claro ;
+        border-radius: 10px;
+    }
+}
+.botonturnos{
+    margin-top: 20px;
+
+} 
+.turnosanimacion{
+    background-color: $color-principal;
+    border-color: $color-principal;
+    font-family: $tipografia-principal, cursive;
+    &:hover{
+        background-color: $color-oscuro;
+        border-color: $color-claro;
+        color:$color-principal !important;
+    }
+} 
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 10px;
+}
+.turnos{
+    color: $color-oscuro;
+    font-weight: bold;
+    text-decoration: none;
+&:hover{
+        color: $color-principal;
+    }
+}
