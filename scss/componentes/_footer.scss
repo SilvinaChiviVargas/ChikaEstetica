@@ -22,19 +22,29 @@ iframe{
         width: 400px;
         }
 
-
 .botonig{
     padding-bottom: 40px;
         
 }
-.animationig {
+.instagram{
+    color: #fcfcda;
+    &:hover{
+        color: #fcfcda;
+        
+        
+    }
+}
+
+
+
+.animationig{
     display: flex;
     position:relative;
     gap: 10px;
     align-items: center;
     padding: 10px;
     text-align: center;
-    background-image: url(./img/igbackground.png);
+    background-image: url(../img/igbackground.png);
     color: $color-claro;
     border-radius: 30px;
     font-family: $tipografia-principal, cursive;
