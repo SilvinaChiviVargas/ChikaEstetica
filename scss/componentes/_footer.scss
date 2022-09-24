@@ -2,59 +2,29 @@
 footer{
     display: flex;
     justify-content: center;
+    background: rgba(71, 0, 0, 0.1);
 ul{
         font-family: $tipografia-secundaria;
-        color: #A96DA6;
+        color: #a68666;
         margin: 10px;
+        font-weight: bolder;
 li{
             display: flex;
             flex-direction: column;
             text-decoration: overline;
-            background: rgba(71, 0, 0, 0.1);
-            gap: 10px;
+             gap: 10px;
             align-items: flex-start;
             padding: 10px;
         }   
         
     }
 iframe{
-        height: 200px;
+    padding-top: 25px;    
+    height: 200px;
         width: 400px;
         }
 
-.botonig{
-    padding-bottom: 40px;
-        
-}
-.instagram{
-    color: #fcfcda;
-    &:hover{
-        color: #fcfcda;
-        
-        
-    }
-}
 
-
-
-.animationig{
-    display: flex;
-    position:relative;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    background-image: url(../img/igbackground.png);
-    color: $color-claro;
-    border-radius: 30px;
-    font-family: $tipografia-principal, cursive;
-&:hover{
-        box-shadow: 1px 1px 20px 11px #d8ccd8;
-      transition: all 0.2s ease;
-        
-    }
-
-}
 @import url('https://css.gg/time.css');
 .gg-time::after {
     content: "";

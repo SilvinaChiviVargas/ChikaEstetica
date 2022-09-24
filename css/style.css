@@ -7,6 +7,51 @@
   background-size: cover;
 }
 
+.btnlaterales {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.btnwhatsapp {
+  color: #BF5D65;
+  transition: all 5s ease-in-out;
+}
+.btnwhatsapp:hover {
+  width: 5%;
+  color: #BF5D65;
+}
+.btnwhatsapp a {
+  color: #BF5D65;
+}
+
+.btninstagram {
+  color: #BF5D65;
+  transition: all 0.4s ease-in-out;
+}
+.btninstagram:hover {
+  width: 5%;
+  color: #364255;
+}
+.btninstagram a {
+  color: #BF5D65;
+}
+
+.btnfacebook {
+  color: #BF5D65;
+  transition: all 0.4s;
+}
+.btnfacebook:hover {
+  width: 5%;
+  color: #364255;
+}
+.btnfacebook a {
+  color: #BF5D65;
+}
+
 .logo {
   width: 400px;
 }
@@ -15,25 +60,24 @@
   list-style-type: none;
   border: 10px;
   font-size: 20px;
-  font-weight: bold;
   font-family: "Aboreto", cursive;
-  color: #fcfcda;
+  color: #EF7978;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
   margin-top: 20px;
-  font-weight: 600;
-  text-shadow: 1px 1px 2px #364255, 0 0 1em #fcfcda, 0 0 0.2em #fcfcda;
+  font-weight: bolder;
+  text-shadow: 1px 1px 20px #A96DA6, 0 0 1em #fcfcda, 0 0 0.2em #fcfcda;
 }
 
 .nav-link {
   color: #EF7978;
-  text-decoration-color: #fcfcda;
+  text-decoration-color: #BF5D65;
 }
 .nav-link:hover {
-  background-color: #364255;
-  color: #fcfcda;
-  border-radius: 10px;
+  color: #BF5D65;
+  background: rgba(217, 191, 170, 0.1);
+  border-radius: 30px;
 }
 
 .botonturnos {
@@ -46,9 +90,11 @@
   font-family: "Aboreto", cursive;
 }
 .turnosanimacion:hover {
-  background-color: #364255;
+  background-color: #fcfcda;
   border-color: #fcfcda;
   color: #EF7978 !important;
+  box-shadow: 1px 1px 20px 11px #d8ccd8;
+  transition: all 0.2s ease;
 }
 
 .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
@@ -67,50 +113,27 @@
 footer {
   display: flex;
   justify-content: center;
+  background: rgba(71, 0, 0, 0.1);
   @import url("https://css.gg/time.css");
 }
 footer ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #A96DA6;
+  color: #a68666;
   margin: 10px;
+  font-weight: bolder;
 }
 footer ul li {
   display: flex;
   flex-direction: column;
   text-decoration: overline;
-  background: rgba(71, 0, 0, 0.1);
   gap: 10px;
   align-items: flex-start;
   padding: 10px;
 }
 footer iframe {
+  padding-top: 25px;
   height: 200px;
   width: 400px;
-}
-footer .botonig {
-  padding-bottom: 40px;
-}
-footer .instagram {
-  color: #fcfcda;
-}
-footer .instagram:hover {
-  color: #fcfcda;
-}
-footer .animationig {
-  display: flex;
-  position: relative;
-  gap: 10px;
-  align-items: center;
-  padding: 10px;
-  text-align: center;
-  background-image: url(../img/igbackground.png);
-  color: #fcfcda;
-  border-radius: 30px;
-  font-family: "Aboreto", cursive;
-}
-footer .animationig:hover {
-  box-shadow: 1px 1px 20px 11px #d8ccd8;
-  transition: all 0.2s ease;
 }
 footer .gg-time::after {
   content: "";
@@ -263,6 +286,10 @@ footer .gg-home-alt::before {
   }
   footer div {
     justify-content: center;
+  }
+  /*botones redes @media*/
+  .btnlaterales {
+    z-index: 1;
   }
   /*index @media*/
   .SobreNosotros {

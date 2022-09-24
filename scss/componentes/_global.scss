@@ -5,4 +5,55 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-};
+}
+.btnlaterales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    position: fixed;
+    width: 100%;
+    
+    
+    
+    
+}
+.btnwhatsapp{
+    color: $color-secundario;
+    transition: all 5s ease-in-out;
+    &:hover{
+    width: 5%;
+    color: $color-secundario;
+    
+       } 
+    a{
+        
+        color: $color-secundario;
+        
+    }
+}
+
+.btninstagram{
+    color: $color-secundario;
+    transition: all .4s ease-in-out;
+    &:hover{
+        width: 5%;
+        color: $color-oscuro;
+       }
+    
+       a{
+        color: $color-secundario ;
+       }
+}
+.btnfacebook{
+    color: $color-secundario;
+    transition:all .4s;
+    &:hover{
+    width: 5%;
+        color: $color-oscuro;
+       }
+    a{
+       color: $color-secundario;
+         
+    }
+}
