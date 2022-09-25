@@ -11,9 +11,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 100;
   gap: 10px;
   position: fixed;
   width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .btnlaterales {
+    z-index: 1;
+    top: 3%;
+  }
 }
 
 .btnwhatsapp {
@@ -50,6 +57,19 @@
 }
 .btnfacebook a {
   color: #BF5D65;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    text-align: center;
+    margin-inline-start: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logonav {
+    margin-inline-start: auto;
+  }
 }
 
 .logo {
@@ -116,6 +136,13 @@ footer {
   background: rgba(71, 0, 0, 0.1);
   @import url("https://css.gg/time.css");
 }
+@media only screen and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #a68666;
@@ -132,8 +159,15 @@ footer ul li {
 }
 footer iframe {
   padding-top: 25px;
-  height: 200px;
+  height: 300px;
   width: 400px;
+}
+@media only screen and (max-width: 480px) {
+  footer iframe {
+    height: 300px;
+    width: 300px;
+    padding: 30px 10px;
+  }
 }
 footer .gg-time::after {
   content: "";
@@ -180,6 +214,60 @@ footer .gg-home-alt::before {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.section3index {
+  margin-top: 30px;
+}
+
+.cardpromo {
+  background-color: #e6e4d3 !important;
+}
+
+.cardproductos {
+  background-color: #e6e4d3 !important;
+}
+
+.promotitle {
+  font-family: "Aboreto";
+  color: #364255;
+  font-weight: bolder;
+}
+
+.productostitle {
+  font-family: "Aboreto";
+  color: #364255;
+  font-weight: bolder;
+}
+
+.promotext {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #7494a2;
+}
+
+.productostext {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #7494a2;
+}
+
+.btnproductos {
+  color: #7494a2 !important;
+  background-color: #fcfcda;
+  border-color: #fcfcda !important;
+}
+.btnproductos:hover {
+  background-color: #EF7978;
+  color: #fcfcda !important;
+}
+
+.btnpromo {
+  color: #7494a2 !important;
+  background-color: #fcfcda;
+  border-color: #fcfcda !important;
+}
+.btnpromo:hover {
+  background-color: #EF7978;
+  color: #fcfcda !important;
+}
+
 .SobreNosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -192,6 +280,19 @@ footer .gg-home-alt::before {
   background-color: #EF7978;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 100px;
+}
+@media only screen and (max-width: 480px) {
+  .SobreNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "titulosn" "fotoequipo" "textosn";
+    margin: 30px;
+    padding: 60px;
+    height: inherit;
+    text-align: center;
+    align-items: center;
+  }
 }
 .SobreNosotros img {
   border-radius: 10% 30% 50% 70%;
@@ -243,54 +344,22 @@ footer .gg-home-alt::before {
 }
 
 /*contacto*/
-/*no es la imagen final*/
+/*falta formulario*/
 .formulario {
-  background-repeat: no-repeat;
   height: 400px;
-  background-image: url(./img/fototemplateformulario.webp);
-  background-size: 60%;
-  color: #cf6db1;
-  font-family: "Aboreto", cursive;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "textform . fotoform";
+  background-image: url(../img/backgroundtratamientos.png);
+  color: #364255;
+  font-family: "Aboreto";
+  font-weight: bolder;
+  margin-bottom: 100px;
 }
 .formulario p {
-  height: 200px;
-  width: 200px;
   overflow: hidden;
-  padding-top: 30px;
-  grid-area: textform;
+  padding: 150px;
+  text-align: center;
 }
 
-.formularioEjemplo {
-  grid-area: fotoform;
-}
-
-/*aca va un formulario al costado*/
 @media only screen and (max-width: 480px) {
-  /*header @media*/
-  header {
-    text-align: center;
-  }
-  .logonav {
-    margin-inline-start: auto;
-  }
-  /*footer @media*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer div {
-    justify-content: center;
-  }
-  /*botones redes @media*/
-  .btnlaterales {
-    z-index: 1;
-  }
   /*index @media*/
   .SobreNosotros {
     display: grid;

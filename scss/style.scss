@@ -13,6 +13,54 @@
 .carousel-caption{
     text-shadow: black 0.1em 0.1em 0.2em;
  }
+
+ .section3index{
+    margin-top: 30px;
+
+ }
+.cardpromo{
+    background-color: #e6e4d3 !important
+}
+.cardproductos{
+    background-color: #e6e4d3 !important
+}
+ .promotitle{
+    font-family: $tipografia-principal;
+    color: $color-oscuro;
+    font-weight: bolder;
+ }
+ .productostitle{
+    font-family: $tipografia-principal;
+    color: $color-oscuro;
+    font-weight: bolder;
+ }
+ .promotext {
+    font-family: $tipografia-secundaria;
+    color: #7494a2;
+ }
+ .productostext{
+    font-family: $tipografia-secundaria;
+    color: #7494a2;
+ }
+ 
+ .btnproductos {
+    color: #7494a2 !important;
+    background-color: $color-claro;
+    border-color: $color-claro !important;
+    &:hover{
+        background-color: $color-principal;
+        color: $color-claro !important;
+    }
+ }
+ .btnpromo {
+    color: #7494a2 !important;
+    background-color: $color-claro;
+    border-color: $color-claro !important;
+    &:hover{
+        background-color: $color-principal;
+        color: $color-claro !important;
+ }
+ }
  .SobreNosotros{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,6 +75,20 @@
     background-color: $color-principal;
     font-family: $tipografia-secundaria;
     margin: 100px;
+    @media only screen and (max-width:480px){
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "titulosn"
+    "fotoequipo"
+    "textosn";
+    margin: 30px;
+    padding: 60px;
+    height: inherit;
+    text-align: center;
+    align-items: center;
+    }
 img{
         border-radius: 10% 30% 50% 70%;
         grid-area: fotoequipo;
@@ -79,64 +141,32 @@ h1{
     background:rgba(239, 80, 79, 0.2);
 }
 /*contacto*/
-/*no es la imagen final*/
+/*falta formulario*/
 .formulario{
-    background-repeat: no-repeat;
+    
     height: 400px;
-    background-image: url(./img/fototemplateformulario.webp);
-    background-size: 60%;
-    color:#cf6db1;
-    font-family: $tipografia-principal, cursive;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "textform . fotoform";
+    background-image: url(../img/backgroundtratamientos.png);
+    color:$color-oscuro;
+    font-family: $tipografia-principal;
+    font-weight: bolder;
+    margin-bottom: 100px;
+    
+    
 p{
-        height: 200px;
-        width: 200px;
+        
         overflow: hidden;
-        padding-top: 30px;
-        grid-area:textform;
+        padding: 150px;
+        text-align: center;
+        
         
         }
 }
 
 
-.formularioEjemplo{
-    grid-area:fotoform,
 
-
-}
-    /*aca va un formulario al costado*/
-    @media only screen and (max-width:480px){
-        /*header @media*/
-    header{
-            text-align: center;
-    }
-    
-     .logonav{
-        margin-inline-start:auto;
-     }
-     
-       /*footer @media*/ 
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    footer div{
-        justify-content: center;
-    }
-
-    /*botones redes @media*/ 
-    .btnlaterales{
-        z-index: 1
+   
+@media only screen and (max-width:480px){
         
-    }
-
-    
        /*index @media*/
     
     .SobreNosotros{

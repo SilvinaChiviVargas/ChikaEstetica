@@ -3,11 +3,17 @@ footer{
     display: flex;
     justify-content: center;
     background: rgba(71, 0, 0, 0.1);
+    @media only screen and (max-width:480px){
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
 ul{
         font-family: $tipografia-secundaria;
         color: #a68666;
         margin: 10px;
         font-weight: bolder;
+        
 li{
             display: flex;
             flex-direction: column;
@@ -20,8 +26,14 @@ li{
     }
 iframe{
     padding-top: 25px;    
-    height: 200px;
-        width: 400px;
+    height: 300px;
+    width: 400px;
+    @media only screen and (max-width:480px){
+        height: 300px;
+        width: 300px;
+        padding: 30px 10px;
+    }
+
         }
 
 

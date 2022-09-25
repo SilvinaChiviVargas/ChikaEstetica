@@ -1,4 +1,16 @@
 
+header{
+    @media only screen and (max-width:480px){
+        text-align: center;
+        margin-inline-start:auto; 
+    }
+}
+
+.logonav{
+    @media only screen and (max-width:480px){
+        margin-inline-start:auto;  
+    }
+}
 .logo{
     width: 400px;
 }
