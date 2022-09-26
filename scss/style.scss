@@ -1,4 +1,7 @@
-@import "./base/variables.scss";
+@import "./base/variables";
+@import "./base/extend";
+@import "./base/mixin";
+@import "./base/maps";
 @import "./componentes/global";
 @import "./componentes/header";
 @import "./componentes/footer";
@@ -25,14 +28,15 @@
     background-color: #e6e4d3 !important
 }
  .promotitle{
-    font-family: $tipografia-principal;
+    
     color: $color-oscuro;
     font-weight: bolder;
+    @extend %titulos;
  }
  .productostitle{
-    font-family: $tipografia-principal;
     color: $color-oscuro;
     font-weight: bolder;
+    @extend %titulos;
  }
  .promotext {
     font-family: $tipografia-secundaria;
@@ -120,10 +124,8 @@ h1{
     font-size: x-large;
     font-weight: 800;
     border: black;
-    text-align: center;
-    font-family: $tipografia-principal;
     text-shadow: 0px 1px 14px $color-secundario;
-    
+    @extend %titulos;
 }
 
 .accordion-item{
@@ -139,6 +141,11 @@ h1{
 .accordion-button:not(.collapsed){
     color: $color-oscuro;
     background:rgba(239, 80, 79, 0.2);
+}
+
+.accordion-item{
+    background-color: map-get($map: $tratamientoscards , $key: collapsebg );
+    color: map-get($map: $tratamientoscards , $key: collapseColor );
 }
 /*contacto*/
 /*falta formulario*/

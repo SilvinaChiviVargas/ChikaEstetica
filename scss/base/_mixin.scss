@@ -1,0 +1,12 @@
+@mixin formContacto ($size, $color) {
+    font-family: $tipografia-secundaria;
+    font-size: $size;
+    margin: $size*2;
+    padding: $size/2;
+    background-color: $color;
+    color: $color-secundario;  
+}
+
+.templateformulario{
+    @include formContacto( 25px, #Ae675b)
+}
