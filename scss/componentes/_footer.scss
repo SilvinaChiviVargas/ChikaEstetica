@@ -2,7 +2,7 @@
 footer{
     display: flex;
     justify-content: center;
-    background: rgba(71, 0, 0, 0.1);
+    background: rgba(71, 0, 0, 0.05);
     @media only screen and (max-width:480px){
         display: flex;
         flex-direction: column;
@@ -12,6 +12,7 @@ ul{
         font-family: $tipografia-secundaria;
         color: #a68666;
         margin: 10px;
+        padding-top: 50px;
         font-weight: bolder;
         
 li{
@@ -21,11 +22,12 @@ li{
              gap: 10px;
             align-items: flex-start;
             padding: 10px;
+            text-shadow: 0 0 black;
         }   
         
     }
 iframe{
-    padding-top: 25px;    
+    padding-top: 30px;    
     height: 300px;
     width: 400px;
     @media only screen and (max-width:480px){
