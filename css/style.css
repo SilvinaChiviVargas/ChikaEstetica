@@ -7,7 +7,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
   margin: 50px;
-  padding: 12.5px;
+  padding: 25px;
   background-color: #Ae675b;
   color: #BF5D65;
 }
@@ -327,7 +327,7 @@ footer .gg-home-alt::before {
 .allcards {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ec7c7c;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6 {
@@ -343,21 +343,26 @@ footer .gg-home-alt::before {
 }
 
 .accordion-button {
-  background: rgba(239, 80, 79, 0.2);
+  color: #ae675b;
+  background: rgba(230, 228, 211, 0.1);
+}
+.accordion-button:hover {
+  z-index: 100;
 }
 
 .card {
-  background: rgba(240, 79, 79, 0.1);
+  background: rgba(140, 147, 155, 0.3);
 }
 
 .accordion-button:not(.collapsed) {
   color: #364255;
-  background: rgba(239, 80, 79, 0.2);
+  background: rgba(116, 148, 162, 0.2);
 }
 
 .accordion-item {
   background-color: #f6f5e4;
   color: #7494a2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*contacto*/
