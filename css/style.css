@@ -288,8 +288,8 @@ footer .gg-home-alt::before {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "titulosn fotoequipo" "textosn fotoequipo";
   align-items: stretch;
-  grid-column-gap: 30px;
-  padding: 30px;
+  grid-column-gap: 10px;
+  padding: 50px;
   color: rgb(249, 248, 231);
   background-color: #EF7978;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -318,9 +318,10 @@ footer .gg-home-alt::before {
   grid-area: textosn;
   justify-self: center;
 }
-.SobreNosotros h1 {
+.SobreNosotros h3 {
   grid-area: titulosn;
   justify-self: center;
+  font-weight: 600;
 }
 
 /*tratamientos*/

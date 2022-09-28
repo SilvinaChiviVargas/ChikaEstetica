@@ -73,8 +73,8 @@
     "titulosn fotoequipo"
     "textosn fotoequipo";
     align-items: stretch;
-    grid-column-gap: 30px;
-    padding: 30px;
+    grid-column-gap: 10px;
+    padding: 50px;
     color: rgb(249, 248, 231);
     background-color: $color-principal;
     font-family: $tipografia-secundaria;
@@ -104,9 +104,10 @@ p{
         grid-area: textosn;
         justify-self: center;
     }
-h1{
+h3{
         grid-area: titulosn;
         justify-self: center;
+        font-weight: 600;
     
     }
 
