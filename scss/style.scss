@@ -18,26 +18,26 @@
  }
 
  .section3index{
-    margin-top: 30px;
+    margin: 30px;
+    
 
  }
 .cardpromo{
-    background-color: #e6e4d3 !important
+    background-color: #e6e4d3 !important;
+
+    
 }
 .cardproductos{
-    background-color: #e6e4d3 !important
-}
- .promotitle{
+    background-color: #e6e4d3 !important;
     
+}
+ .promotitle, .productostitle{
     color: $color-oscuro;
     font-weight: bolder;
     @extend %titulos;
+    font-size: larger;
  }
- .productostitle{
-    color: $color-oscuro;
-    font-weight: bolder;
-    @extend %titulos;
- }
+ 
  .promotext {
     font-family: $tipografia-secundaria;
     color: #7494a2;
@@ -65,54 +65,81 @@
         color: $color-claro !important;
  }
  }
- .SobreNosotros{
+
+ .templateformulario{
+    background-color: $color-principal;
+    margin: 150px;
+
+    padding: 60px;
+    width: fit-content;
+    @media only screen and (max-width:480px){
+        height: inherit;
+    margin: auto;
+    }
+}
+.formulario{ 
+    height: 30px;
+    color:$color-oscuro;
+    font-family: $tipografia-principal;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    @media only screen and (max-width:480px) {
+        font-size: small;
+        height: auto;
+
+    }
+ 
+ }
+
+.botonenviar{
+
+
+    color: #7494a2 !important;
+    background-color: $color-claro;
+    border-color: $color-claro !important;
+    &:hover{
+        background-color: $color-principal;
+        color: $color-claro !important;
+    }
+}
+.formgrid{
+    height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "titulosn fotoequipo"
-    "textosn fotoequipo";
-    align-items: stretch;
+    grid-template-areas:
+    "nymail comentarios"
+    "botenviar comentarios";
     grid-column-gap: 10px;
-    padding: 50px;
-    color: rgb(249, 248, 231);
-    background-color: $color-principal;
-    font-family: $tipografia-secundaria;
-    margin: 100px;
     @media only screen and (max-width:480px){
         display: grid;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "titulosn"
-    "fotoequipo"
-    "textosn";
-    margin: 30px;
-    padding: 60px;
-    height: inherit;
-    text-align: center;
-    align-items: center;
-    }
-img{
-        border-radius: 10% 30% 50% 70%;
-        grid-area: fotoequipo;
-        justify-self: end;  
-        }
-    
-p{
-        border: 200px;
-        grid-area: textosn;
-        justify-self: center;
-    }
-h3{
-        grid-area: titulosn;
-        justify-self: center;
-        font-weight: 600;
-    
-    }
+    grid-template-areas:
+    "nymail"
+    "comentarios"
+    "botenviar";
 
-   
+
+    }
 }
+.formgrid1{
+    grid-area: nymail;
+}
+.formgrid2{
+    grid-area: comentarios;
+}
+.formenviar{
+    grid-area: botenviar;
+    justify-self: center;
+}
+.comentspace{
+    line-height: 10;
+    @media only screen and (max-width:480px){
+        line-height: 5;
+    }
+}
+
 /*tratamientos*/
 .allcards{
     font-family: $tipografia-secundaria;
@@ -126,6 +153,7 @@ h3{
     font-weight: 800;
     border: black;
     text-shadow: 0px 1px 14px $color-secundario;
+    background: rgba(252, 252, 218, 0.4);
     @extend %titulos;
 }
 
@@ -153,48 +181,162 @@ h3{
     color: map-get($map: $tratamientoscards , $key: collapseColor );
     font-family: $tipografia-secundaria;
 }
-/*contacto*/
-/*falta formulario*/
-.formulario{
-    
+/*Sobre Nosotros*/
+.SobreNosotros{
     height: 400px;
-    background-image: url(../img/backgroundtratamientos.png);
-    color:$color-oscuro;
-    font-family: $tipografia-principal;
-    font-weight: bolder;
-    margin-bottom: 100px;
-    
-    
-p{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "textsn fotoequipo"
+    "textsn fotoequipo";
+    align-items: stretch;
+    grid-column-gap: 10px;
+    padding: 50px;
+    color: rgb(249, 248, 231);
+    background-color: $color-principal;
+    font-family: $tipografia-secundaria;
+    margin: 80px;
+    @media only screen and (max-width:480px){
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "fotoequipo"
+    "textsn";
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    }
+img{
+        border-radius: 10% 30% 50% 70%;
+        grid-area: fotoequipo;
+        height: 350px;
+        justify-self: center;  
+        }
+
+.textosSN{
+    grid-area: textsn;
+    p{
+        border: 200px;
         
-        overflow: hidden;
-        padding: 150px;
-        text-align: center;
         
-        
+        &::first-letter{
+            font-size: 40px;
+          }
         }
 }
 
-
-
    
-@media only screen and (max-width:480px){
-        
-       /*index @media*/
+}
+
+.personalchika{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    gap: 50px;
+}
+.flip-container {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin:0 auto;
+  }
+  
+  .card1 {
+    position: relative;
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+  }
+  
+  .card1 h3, .card1 p {
+    display: inline-flex; 
+    font-family: $tipografia-principal;
+    font-size: larger;
+  } 
+  
+  .card1 p { 
+    color: $color-principal; 
+    font-family: $tipografia-principal;
+  }
+  
+  /* GIRA HORIZONTAL */
+  .flip-container:hover .card1 {
+    transform: rotateY(180deg);
+  }
+  
+  
+  /* GIRA VERTICAL 
+  .flip-container:hover .card {
+    transform: rotateX(180deg);
+  }
+  */
+  .claucard{
+    background-image: url(../img/claustaff.jpg);
+    background-repeat: round;
+  }
+  .staff1card{
+    background-image: url(../img/staff1.jpg);
+    background-repeat: round;
+  }
+  .staff2card{
+    background-image: url(../img/staff2.jpg);
+    background-repeat: round;
+  }
+  .staff3card{
+    background-image: url(../img/staff3.jpg);
+    background-repeat: round;
+  }
+  .staff4card{
+    background-image: url(../img/staff4.jpg);
+    background-repeat: round;
+  }
+  .calacard{
+    background-image: url(../img/calastaff.jpeg);
+    background-repeat: round;
+  }
+  .frenteclau, .frentestaff1, .frentestaff2, .frentestaff3, .frentestaff4, .frentecala, .dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    align-items: center;
+    justify-content: center;
     
-    .SobreNosotros{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-        grid-template-areas: 
-        "titulosn"
-        "fotoequipo"
-        "textosn";
-        margin: 30px;
-        padding: 60px;
-        height: inherit;
-        text-align: center;
-        align-items: center
-        }
+  }
+  
+  .frenteclau, .frentestaff1, .frentestaff2, .frentestaff3, .frentestaff4, .frentecala {
     
-    }
+    color: #fff;
+    display: flex;
+  }
+  
+  .dorso {
+    background-color: $color-claro;
+    color: $color-oscuro;
+    border-radius: 200px;
+    border-color: $color-principal;
+    /*transform: rotateX(180deg);*/
+    transform: rotateY(180deg);
+    text-align:center;
+    padding: 40px;
+  }
+  
+  .dorso p {
+    font-size:0.80em;
+    font-family: $tipografia-secundaria;
+    text-align: justify;
+    
+  }
+  
+ 

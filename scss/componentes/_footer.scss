@@ -27,14 +27,11 @@ li{
         
     }
 iframe{
+    
     padding-top: 30px;    
     height: 300px;
     width: 400px;
-    @media only screen and (max-width:480px){
-        height: 300px;
-        width: 300px;
-        padding: 30px 10px;
-    }
+    
 
         }
 
