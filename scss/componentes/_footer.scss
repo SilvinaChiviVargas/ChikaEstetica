@@ -10,7 +10,7 @@ footer{
     }
 ul{
         font-family: $tipografia-secundaria;
-        color: #a68666;
+        color: $color-oscuro;
         margin: 10px;
         padding-top: 80px;
         font-weight: bolder;
@@ -22,7 +22,7 @@ li{
              gap: 10px;
             align-items: flex-start;
             padding: 10px;
-            text-shadow: 0 0 black;
+            text-shadow: 0 0  #a68666;
         }   
         
     }

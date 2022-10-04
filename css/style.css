@@ -150,7 +150,7 @@ footer {
 }
 footer ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #a68666;
+  color: #364255;
   margin: 10px;
   padding-top: 80px;
   font-weight: bolder;
@@ -162,7 +162,7 @@ footer ul li {
   gap: 10px;
   align-items: flex-start;
   padding: 10px;
-  text-shadow: 0 0 black;
+  text-shadow: 0 0 #a68666;
 }
 footer iframe {
   padding-top: 30px;
@@ -215,7 +215,7 @@ footer .gg-home-alt::before {
 }
 
 .section3index {
-  margin: 30px;
+  margin: 40px;
 }
 
 .cardpromo {
