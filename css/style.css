@@ -382,7 +382,7 @@ footer .gg-home-alt::before {
 
 /*Sobre Nosotros*/
 .SobreNosotros {
-  height: 400px;
+  height: 450px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -402,7 +402,7 @@ footer .gg-home-alt::before {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "fotoequipo" "textsn";
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
     height: auto;
     text-align: center;
     align-items: center;
@@ -413,12 +413,14 @@ footer .gg-home-alt::before {
   grid-area: fotoequipo;
   height: 350px;
   justify-self: center;
+  padding: 15px;
 }
 .SobreNosotros .textosSN {
   grid-area: textsn;
 }
 .SobreNosotros .textosSN p {
   border: 200px;
+  padding: 15px;
 }
 .SobreNosotros .textosSN p::first-letter {
   font-size: 40px;
